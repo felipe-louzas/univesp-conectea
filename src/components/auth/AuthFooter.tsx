@@ -20,7 +20,7 @@ export const AuthFooter = () => {
                 textAlign={matchDownSM ? 'center' : 'inherit'}
             >
                 <Typography variant="subtitle2" color="secondary" component="span">
-                    &copy; 2023 Instituto Incluir. Todos os direitos reservados.
+                    &copy; 2024 Instituto Incluir. Todos os direitos reservados.
                 </Typography>
 
                 <Stack direction={matchDownSM ? 'column' : 'row'} spacing={matchDownSM ? 1 : 3} textAlign={matchDownSM ? 'center' : 'inherit'}>

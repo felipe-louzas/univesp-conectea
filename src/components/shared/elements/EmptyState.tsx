@@ -18,7 +18,7 @@ export default function EmptyState(props: EmptyStateProps) {
         <Box display="flex" justifyContent="center" alignItems="center" flexDirection="column">
             <Typography variant="h4" color="primary" sx={{mt: 2, mb: 2}}>{props.message ?? 'Nenhum registro encontrado'}</Typography>
             {props.action && props.link && <Button variant="contained" sx={{mb: 3}} onClick={() => router.push(props.link!)}>{props.action}</Button>}
-            <Image src={emptyState} alt="Empty State" width={450} height={450} />
+            <Image src={emptyState} alt="Empty State" width={270} height={270} />
         </Box>
     );
 }

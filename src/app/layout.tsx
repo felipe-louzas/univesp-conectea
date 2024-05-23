@@ -5,7 +5,7 @@ import { darkTheme } from '@/components/theme/default'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'R-TEA | Rastreamento Comportamental de Pessoas Autistas'
+  title: 'ConecTEA | Plataforma colaborativoa para pessoas Autistas'
 }
 
 export default function RootLayout({

@@ -11,7 +11,7 @@ const themeTypography = ThemeTypography(`'Roboto', sans-serif`);
 const darkPalette: PaletteOptions = {
     mode: 'dark',
     primary: {
-        main: '#0B3954',
+        main: '#001628',
     },
     secondary: {
         main: '#8ecae6',
@@ -26,6 +26,9 @@ const lightPalette: PaletteOptions = {
     secondary: {
         main: '#8ecae6',
     },
+    background: {
+        default: '#d5dde3',
+    }
 }
 
 export const darkTheme: ThemeOptions = {
