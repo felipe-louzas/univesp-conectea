@@ -1,3 +1,5 @@
+import { authenticateRequest } from "@/modules/utils/authenticateRequest";
+
 /**
  * @openapi
  * /api/pessoas/{pessoaId}/registros:
@@ -38,6 +40,12 @@
  *               
  */
 export async function GET(_request: Request) {
+    try {
+        await authenticateRequest(_request);
+    } catch (error) {
+        return Response.json({ error: String(error) }, { status: 401 });
+    }
+
     // TODO: Implementar GET /api/pessoas/{pessoaId}/registros
     throw new Error('Not implemented yet');
 }
@@ -88,6 +96,12 @@ export async function GET(_request: Request) {
  *               
  */
 export async function POST(_request: Request) {
+    try {
+        await authenticateRequest(_request);
+    } catch (error) {
+        return Response.json({ error: String(error) }, { status: 401 });
+    }
+
     // TODO: Implementar POST /api/pessoas/{pessoaId}/registros
     throw new Error('Not implemented yet');
 }

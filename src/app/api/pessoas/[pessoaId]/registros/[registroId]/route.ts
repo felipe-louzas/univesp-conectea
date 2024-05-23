@@ -1,3 +1,5 @@
+import { authenticateRequest } from "@/modules/utils/authenticateRequest";
+
 /**
  * @openapi
  * /api/pessoas/{pessoaId}/registros/{registroId}:
@@ -56,6 +58,12 @@
  *               
  */
 export async function PUT(_request: Request) {
+    try {
+        await authenticateRequest(_request);
+    } catch (error) {
+        return Response.json({ error: String(error) }, { status: 401 });
+    }
+
     // TODO: Implementar PUT /api/pessoas/{pessoaId}/registros/{registroId}
     throw new Error('Not implemented yet');
 }
@@ -108,6 +116,12 @@ export async function PUT(_request: Request) {
  *               
  */
 export async function DELETE(_request: Request) {
+    try {
+        await authenticateRequest(_request);
+    } catch (error) {
+        return Response.json({ error: String(error) }, { status: 401 });
+    }
+
     // TODO: Implementar DELETE /api/pessoas/{pessoaId}/registros/{registroId}
     throw new Error('Not implemented yet');
 }

@@ -1,3 +1,5 @@
+import { authenticateRequest } from "@/modules/utils/authenticateRequest";
+
 /**
  * @openapi
  * /api/users:
@@ -31,6 +33,12 @@
  *               
  */
 export async function GET(_request: Request) {
+    try {
+        await authenticateRequest(_request);
+    } catch (error) {
+        return Response.json({ error: String(error) }, { status: 401 });
+    }
+
     // TODO: Implementar GET /api/users
     throw new Error('Not implemented yet');
 }

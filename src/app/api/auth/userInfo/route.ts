@@ -1,5 +1,6 @@
 import { getProfileRepository } from "@/modules/firebase";
 import { loginWithToken } from "@/modules/firebase/services/auth";
+import { authenticateRequest } from "@/modules/utils/authenticateRequest";
 
 /**
  * @openapi
@@ -35,23 +36,12 @@ import { loginWithToken } from "@/modules/firebase/services/auth";
  */
 export async function GET(_request: Request) {
     try {
-        const authHeader = _request.headers.get("Authorization")
-        if (!authHeader) {
-            return Response.json({ error: "No authorization provided" }, { status: 401 });
-        }
-        const [ type, token ] = authHeader.split(" ")
-        if (type !== "Bearer") {
-            return Response.json({ error: "Invalid authorization type" }, { status: 401 });
-        }
-        if (!token) {
-            return Response.json({ error: "No token provided" }, { status: 401 });
-        }
-        try {
-            await loginWithToken(token);
-        } catch (error) {
-            return Response.json({ error: String(error) }, { status: 401 });
-        }
+        await authenticateRequest(_request);
+    } catch (error) {
+        return Response.json({ error: String(error) }, { status: 401 });
+    }
 
+    try {
         const repo = await getProfileRepository();
         const user = await repo.getProfile();
         return Response.json(user);
