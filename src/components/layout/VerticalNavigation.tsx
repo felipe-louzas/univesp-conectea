@@ -4,6 +4,7 @@ import { Box, Drawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText
 import { usePathname, useRouter } from 'next/navigation';
 import { useAuthContext } from '../auth/AuthContext';
 import { UserKind } from '@/modules/firebase/models/UserKind';
+import DashboardIcon from '@mui/icons-material/Dashboard';
 
 
 const drawerWidth = 240;
@@ -17,13 +18,10 @@ export default function VerticalNavigation(props: Props) {
     const { userCtx } = useAuthContext();
     const router = useRouter();
     const currentPath = usePathname();
-    /*código que Eduardo mexeu cria varivel pra  condicional*/
-    //tipo de usuario 
-    const tipodeusuario=userCtx.user.profile.userKind;
-    /* fim Eduardo mexeu */
 
     const navigation = [
-        { name: userCtx.labelPessoas, route: '/user/pessoas/lista', icon: PersonOutlineOutlinedIcon },
+        { name: 'Dashboard', route: '/user/dashboard', icon: DashboardIcon },
+        { name: userCtx.labelPessoas, route: '/user/pessoas/lista', icon: PersonOutlineOutlinedIcon, restrict: [UserKind.PessoaAutista, UserKind.PessoaSemDiagnostico] },
         { name: 'Registros', route: '/user/registros/lista', icon: AssignmentOutlinedIcon },
     ]
 
@@ -37,23 +35,22 @@ export default function VerticalNavigation(props: Props) {
         }
     }
 
-    /*se usauario é autista renomear aaguar menu dependend eEduarod  mexeu aqui*/
-                                            //elemntodoarray[0]tipo 0       //indice do array
-    function fecharmenudependentes(usuarioautista:typeof navigation[0] ,  index:number) {
-    // se indece e pessoaAutista ou em pessoasemdiagnostico  é zero esconde esse menu que é o laterate
-        if (index==0 && (tipodeusuario==UserKind.PessoaAutista || tipodeusuario==UserKind.PessoaSemDiagnostico)) {
-            return false;
-        } else {
+    const filterMenu = (nav: { restrict?: UserKind[] }) => {
+        if (!nav.restrict) {
             return true;
         }
+
+        if (nav.restrict.includes(userCtx.user.profile.userKind || UserKind.Guest)) {
+            return false;
+        }
+
+        return true;
     }
-    /* fim eEduardo mexeu */
 
     const navContent = (
         <Box sx={{ overflow: 'auto' }}>
             <List>
-                {/*Eduardo mexeu aqui*/}
-                {navigation.filter(fecharmenudependentes)
+                {navigation.filter(filterMenu)
                 .map((nav, index) => (
                     <ListItem key={nav.name} disablePadding>
                         <ListItemButton onClick={() => handleNavigation(nav.route)}>
