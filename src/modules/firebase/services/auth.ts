@@ -1,7 +1,6 @@
 
-import { signInWithEmailAndPassword, getAuth, createUserWithEmailAndPassword, updateProfile, User as FirebaseUser, updatePassword, reauthenticateWithCredential, EmailAuthProvider, sendPasswordResetEmail, checkActionCode, ActionCodeInfo, confirmPasswordReset } from "firebase/auth";
+import { signInWithEmailAndPassword, getAuth, createUserWithEmailAndPassword, updateProfile, User as FirebaseUser, updatePassword, reauthenticateWithCredential, EmailAuthProvider, sendPasswordResetEmail, checkActionCode, ActionCodeInfo, confirmPasswordReset, signInWithCustomToken } from "firebase/auth";
 import { firebaseApp } from "../config";
-import { ProfileRepo } from "../repositories/ProfileRepo";
 import { User } from "@/modules/user/UserInfo";
 import { updateDocument } from "./database";
 import { FirebaseError } from "firebase/app";
@@ -11,6 +10,14 @@ const auth = getAuth(firebaseApp);
 export async function login(email: string, password: string) {
     try {
         return await signInWithEmailAndPassword(auth, email, password);
+    } catch (error) {
+        trataErro(error, "Erro ao fazer login");
+    }
+}
+
+export async function loginWithToken(token: string) {
+    try {
+        await signInWithCustomToken(auth, token);
     } catch (error) {
         trataErro(error, "Erro ao fazer login");
     }
