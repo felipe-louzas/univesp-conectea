@@ -1,0 +1,822 @@
+{
+    "type": "FeatureCollection",
+    "name": "points",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 1,
+                "AREA": 9751.94555,
+                "NOME": "Shopping Frei Caneca"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.652520574880334,
+                    -23.55419957371457
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 2,
+                "AREA": 9943.18261,
+                "NOME": "Shopping Pátio Paulista"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.643126059396579,
+                    -23.570597155605274
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 3,
+                "AREA": 4003.34545,
+                "NOME": "Shopping Top Center"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.650497544658414,
+                    -23.565397650490858
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 4,
+                "AREA": 6318.18725,
+                "NOME": "Shopping Center 3"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.659136826642616,
+                    -23.5578716767033
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 55,
+                "AREA": 32857.802,
+                "NOME": "Shopping Center Bourbon"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.680853050147164,
+                    -23.526493769158844
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 7,
+                "AREA": 64947.6286,
+                "NOME": "Shopping Eldorado"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.696348830438069,
+                    -23.572806265829062
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 8,
+                "AREA": 47439.715,
+                "NOME": "Shopping Butantã"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.725154249974771,
+                    -23.584502396878264
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 9,
+                "AREA": 41196.3842,
+                "NOME": "Shopping Iguatemi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.688428826034766,
+                    -23.577175495603655
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 11,
+                "AREA": 11734.8054,
+                "NOME": "Shopping Vila Olímpia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.686607845676612,
+                    -23.595432187914124
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 12,
+                "AREA": 22920.4487,
+                "NOME": "Shopping D&D"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.696611719152351,
+                    -23.608968950165206
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 13,
+                "AREA": 46690.121,
+                "NOME": "Shopping Morumbi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.698742426381081,
+                    -23.623129602029792
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 14,
+                "AREA": 27543.0913,
+                "NOME": "Shopping Market Place"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.699835896916824,
+                    -23.621459278175415
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 15,
+                "AREA": 4567.64209,
+                "NOME": "Shopping Light"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.638688894251352,
+                    -23.546637739939293
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 16,
+                "AREA": 140334.737,
+                "NOME": "Shopping Mooca Plaza"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.594736239705348,
+                    -23.579359328604902
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 17,
+                "AREA": 108625.291,
+                "NOME": "Shopping Central Plaza"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.585819635009301,
+                    -23.593563527187687
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 18,
+                "AREA": 50855.6711,
+                "NOME": "Shopping Cidade Jardim"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.698125407177294,
+                    -23.598962071228616
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 19,
+                "AREA": 40374.249,
+                "NOME": "Shopping Raposo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.750845879553957,
+                    -23.588087784581635
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 20,
+                "AREA": 88912.166,
+                "NOME": "Shopping Anália Franco"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.560303029984162,
+                    -23.560968733819983
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 21,
+                "AREA": 393309.935,
+                "NOME": "Shopping Aricanduva"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.502215616209917,
+                    -23.566792172121289
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 22,
+                "AREA": 128891.396,
+                "NOME": "Shopping Metrô Itaquera"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.470406343610499,
+                    -23.540443875320097
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 24,
+                "AREA": 23157.9489,
+                "NOME": "Shopping Center Penha"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.547015633105374,
+                    -23.525204297409754
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 25,
+                "AREA": 97301.1003,
+                "NOME": "Shopping Lar Center"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.615197553122087,
+                    -23.515306427636926
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 26,
+                "AREA": 168782.833,
+                "NOME": "Shopping Center Norte"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.618338390894074,
+                    -23.51519099228322
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 27,
+                "AREA": 29062.2934,
+                "NOME": "Shopping D"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.623848257142612,
+                    -23.521493664109268
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 28,
+                "AREA": 12050.0688,
+                "NOME": "Shopping Center Mega Polo Moda"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.618539330806392,
+                    -23.536400634705036
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 29,
+                "AREA": 13461.3188,
+                "NOME": "Shopping Center Boulevard Tatuapé"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.576410533581708,
+                    -23.538924643552036
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 30,
+                "AREA": 31530.1867,
+                "NOME": "Shopping Center Metrô Tatuapé"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.576696632835514,
+                    -23.541560976636152
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 31,
+                "AREA": 61241.1733,
+                "NOME": "Tietê Plaza Shopping"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.71848744753769,
+                    -23.506365770423955
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 33,
+                "AREA": 18268.7741,
+                "NOME": "Shopping Center West Plaza"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.674758440706931,
+                    -23.526991802851189
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 34,
+                "AREA": 7217.08081,
+                "NOME": "Shopping Center Lapa"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.700806474868486,
+                    -23.52117043796132
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 35,
+                "AREA": 164277.147,
+                "NOME": "Shopping Center SP Market"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.69895596715849,
+                    -23.678635366085029
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 36,
+                "AREA": 161227.111,
+                "NOME": "Shopping Center Interlagos"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.676241656136909,
+                    -23.676141713342041
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 37,
+                "AREA": 70561.4057,
+                "NOME": "Shopping Center Fiesta"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.72175696863269,
+                    -23.664976272799059
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 38,
+                "AREA": 22813.134,
+                "NOME": "Shopping Center Jardim Sul"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.735934942519542,
+                    -23.631142120717193
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 39,
+                "AREA": 20191.6401,
+                "NOME": "Shopping Center Plaza Sul"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.626896993507891,
+                    -23.619785924554584
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 40,
+                "AREA": 37116.2297,
+                "NOME": "Shopping Center Ibirapuera"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.666841956778228,
+                    -23.610162258443903
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 41,
+                "AREA": 7638.98437,
+                "NOME": "Shopping Metrô Santa Cruz"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.637205243911936,
+                    -23.599031795188495
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 43,
+                "AREA": 23268.9931,
+                "NOME": "Shopping Center BoaVista"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.700969190512481,
+                    -23.654611295600752
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 52,
+                "AREA": 17870.3925,
+                "NOME": "Shopping JK Iguatemi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.690156961643233,
+                    -23.591358417751795
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 45,
+                "AREA": 33775.4968,
+                "NOME": "Shopping Center Continental"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.757198915528463,
+                    -23.547646270870523
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 46,
+                "AREA": 11124.6799,
+                "NOME": "Shopping Metrô Tucuruvi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.602348447748312,
+                    -23.479585983856808
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 47,
+                "AREA": 6873.31396,
+                "NOME": "Shopping Capital"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.586790809635325,
+                    -23.574301153715918
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 48,
+                "AREA": 30196.4284,
+                "NOME": "Shopping Santana Parque"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.644671160980231,
+                    -23.482669286220975
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 49,
+                "AREA": 33575.9736,
+                "NOME": "Shopping Center Campo Limpo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.757460336144618,
+                    -23.649578460383317
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 50,
+                "AREA": 27729.9477,
+                "NOME": "Shopping Villa Lobos"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.721981082995001,
+                    -23.551039042270393
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 51,
+                "AREA": 141366.246,
+                "NOME": "Shopping Mart Center"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.599408359602307,
+                    -23.511031580709908
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 54,
+                "AREA": 14222.5207,
+                "NOME": "Shopping Pátio Higienópolis"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.657483484435978,
+                    -23.542187000074581
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 56,
+                "AREA": 4544.20922,
+                "NOME": "Casa & Movel Shopping"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.683474315284705,
+                    -23.56067408278486
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 57,
+                "AREA": 5895.42553,
+                "NOME": "Mais Shopping Largo 13"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.710623604132927,
+                    -23.653025364187403
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 58,
+                "AREA": 32415.7163,
+                "NOME": "Shopping Nações Unidas"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.696957683644619,
+                    -23.610369060868646
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 59,
+                "AREA": 6658.65087,
+                "NOME": "Silvio Romero Shopping"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.57287303041889,
+                    -23.547245810416847
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 65,
+                "AREA": 2080.93212,
+                "NOME": "Santana Shopping"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.625544295640879,
+                    -23.501114045374109
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 62,
+                "AREA": 1291.1687,
+                "NOME": "Open Mall Panamby"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.729077504751807,
+                    -23.633321300610653
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 66,
+                "AREA": 235856.089,
+                "NOME": "Shopping Panamby Jaragua"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.729437479881106,
+                    -23.650280903585291
+                ]
+            }
+        }
+    ]
+}

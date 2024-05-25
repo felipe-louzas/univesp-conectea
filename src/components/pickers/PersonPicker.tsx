@@ -1,6 +1,6 @@
 'use client';
 
-import { Avatar, Box, Card, CardActionArea, CardContent, Menu, MenuItem, Typography } from "@mui/material";
+import { Avatar, Box, Card, CardActionArea, CardContent, Menu, MenuItem, SxProps, Theme, Typography } from "@mui/material";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { Pessoa } from "@/modules/firebase/models/Pessoa";
 import { UserKind } from "@/modules/firebase/models/UserKind"; 
@@ -11,10 +11,11 @@ type PersonPickerProps = {
     pessoas: Pessoa[],
     selectedPerson: Pessoa,
     onChange: (pessoa: Pessoa) => void,
-    userKind: UserKind
+    userKind: UserKind,
+    sx?: SxProps<Theme>;
 }
 
-export default function PersonPicker({ label, pessoas, selectedPerson, userKind, onChange }: PersonPickerProps) {
+export default function PersonPicker({ label, pessoas, selectedPerson, userKind, onChange, sx }: PersonPickerProps) {
     
     const [personMenuAnchor, setPersonMenuAnchor] = React.useState<null | HTMLElement>(null);
 
@@ -27,12 +28,12 @@ export default function PersonPicker({ label, pessoas, selectedPerson, userKind,
     }
 
     if  (userKind === UserKind.PessoaAutista || userKind === UserKind.PessoaSemDiagnostico) {
-    return (<></>)
+        return (<></>)
     }
 
     return (
         <>
-            <Box display='flex' justifyContent='flex-end'>
+            <Box display='flex' justifyContent='flex-end' sx={sx}>
                 <Box>
                     <Typography variant="h6" color='gray'>{label}</Typography>
                     <Card>
