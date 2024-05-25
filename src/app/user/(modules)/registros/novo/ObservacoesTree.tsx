@@ -1,8 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Card, CardContent, Typography, Grid, Button, Box, CardActionArea, TextField } from '@mui/material';
-import { StaticImport } from 'next/dist/shared/lib/get-img-props';
+import { Card, CardContent, Typography, Grid, Button, Box, CardActionArea } from '@mui/material';
 import Image from 'next/image';
 
 import { Pessoa } from '@/modules/firebase/models/Pessoa';
@@ -36,6 +35,7 @@ const ObservacoesTree: React.FC<ObservacoesTreeProps> = ({ data, pessoa, onGrava
   const handleGravarRegistro = async (registro: Registro) => {
     await onGravarRegistro(registro);
     setSelectedItem(null);
+    setNavigationStack([]);
   }
 
   const renderItems = (items: Item[] | undefined) => {

@@ -63,7 +63,7 @@ export default function AddRecordPage() {
             <Divider sx={{ mt: 1, mb: 3 }} />
             <PersonPicker label="Adicionando registro para" pessoas={pessoas} selectedPerson={selectedPerson} userKind={userKind} onChange={handlePersonChange} />
             <Box mt={3}>
-                <ObservacoesTree data={observacoes} pessoa={selectedPerson} onGravarRegistro={handleGravarRegistro}/>
+                <ObservacoesTree key={Date.now()} data={observacoes} pessoa={selectedPerson} onGravarRegistro={handleGravarRegistro}/>
             </Box>
         </>
     );
