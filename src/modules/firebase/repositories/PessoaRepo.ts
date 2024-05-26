@@ -80,7 +80,7 @@ export class PessoaRepo {
         if (registro.id == '') {
             const collectionId = `/pessoas/${pessoa.id}/registros`;
 
-            await addDocument(collectionId, {
+            return await addDocument(collectionId, {
                 ...registro,
                 pessoaId: pessoa.id,
                 pessoaNome: `${pessoa.nome} ${pessoa.sobreNome}`,
@@ -97,6 +97,8 @@ export class PessoaRepo {
                 alteradoPorFullName: this.user.fullName,
                 alteradoEm: new Date(),
             });
+
+            return registro.id;
         }
     }
 

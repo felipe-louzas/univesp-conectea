@@ -1,3 +1,4 @@
+import { getPessoaRepository } from "@/modules/firebase";
 import { authenticateRequest } from "@/modules/utils/authenticateRequest";
 
 /**
@@ -39,8 +40,10 @@ export async function GET(_request: Request) {
         return Response.json({ error: String(error) }, { status: 401 });
     }
 
-    // TODO: Implementar GET /api/pessoas
-    throw new Error('Not implemented yet');
+    const repo = await getPessoaRepository();
+    const pessoas = await repo.getPessoas()
+    pessoas.forEach(pessoa => { delete pessoa.photoUrl }); // Remove a URL da foto para economizar banda
+    return Response.json(pessoas);
 }
 
 /**

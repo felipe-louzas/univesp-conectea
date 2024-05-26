@@ -11,6 +11,7 @@ export async function updateDocument(path: string, data: object) {
 export async function addDocument(path: string, data: object) {
     const ref = doc(collection(db, path));
     await setDoc(ref, {...data, id: ref.id});
+    return ref.id;
 }
 
 export async function loadDocuments<T>(path: string, filter?: QueryCompositeFilterConstraint, config?: QueryNonFilterConstraint): Promise<T[]> {
