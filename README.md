@@ -1,10 +1,10 @@
-# R-TEA: Registro de Comportamentos e Gatilhos para Crianças Autistas
+# ConecTEA: Plataforma Colaborativa de Rastreamento Comportamental para Pessoas Autistas
 
-Este é o repositório do frontend do projeto R-TEA, uma aplicação que permite o registro de comportamentos e seus possíveis gatilhos para crianças autistas. O frontend foi desenvolvido utilizando Next.js.
+Este é o repositório do frontend do projeto ConecTEA, uma aplicação que permite o registro de comportamentos e seus possíveis gatilhos para pessoas autistas. O projeto foi desenvolvido utilizando Next.js.
 
 ## Sobre o Projeto
 
-O R-TEA é uma ferramenta destinada a auxiliar pais, responsáveis e profissionais no acompanhamento e compreensão dos comportamentos de crianças autistas. Ele oferece uma interface amigável e intuitiva para o registro e análise desses comportamentos, facilitando a identificação de padrões e possíveis gatilhos.
+O ConecTEA é uma ferramenta destinada a auxiliar pais, responsáveis, profissionais e pessoas autistas no acompanhamento e compreensão de seus comportamentos. Ele oferece uma interface amigável e intuitiva para o registro e análise desses comportamentos, facilitando a identificação de padrões e possíveis gatilhos.
 
 ## Tecnologias Utilizadas
 
